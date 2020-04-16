@@ -10,3 +10,4 @@
 rootProject.name = 'labs'
 
 include '01-intro-gradle'
+include '02-tad-racional'
