@@ -7,8 +7,4 @@
  * in the user manual at https://docs.gradle.org/6.3/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'labs'
-
-include '01-intro-gradle'
-include '02-tad-racional'
-include '03-relatorio-vetor'
+rootProject.name = '03-relatorio-vetor'
