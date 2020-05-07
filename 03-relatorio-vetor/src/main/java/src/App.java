@@ -11,7 +11,7 @@ public class App {
         long timeNow = System.currentTimeMillis();
         System.out.println(timeNow);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             vetor.adicionar(i);
         }
 

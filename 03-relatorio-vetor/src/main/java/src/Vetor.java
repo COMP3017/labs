@@ -28,9 +28,9 @@ public class Vetor {
         // se a proxima posicao nao estiver ocupada.
         if (ultima_posicao == elementos.length - 1) {
             // AUMENTAR O TAMANHO DO "VETOR"
-
+            return;
             // E ADICIONAR O ELEMENTO.
-            elementos[ultima_posicao] = _valor;
+            // elementos[ultima_posicao] = _valor;
         }
         if (elementos[ultima_posicao + 1] == 0) {
             ultima_posicao = ultima_posicao + 1;
@@ -59,6 +59,22 @@ public class Vetor {
             ultima_posicao = _indice;
         }
 
+    }
+
+    // [0,7,3,4,8]
+    /**
+     * Metodo para buscar um determinado valor no vetor. Retorna -1 caso nao
+     * encontre.
+     * 
+     * @param _valor
+     * @return retorna o indice do valor encontrado.
+     */
+    public int buscar(int _valor) {
+        for (int i = 0; i < elementos.length; i++) {
+            if (elementos[i] == _valor)
+                return i;
+        }
+        return -1;
     }
 
     @Override

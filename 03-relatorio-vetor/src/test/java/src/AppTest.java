@@ -30,4 +30,24 @@ public class AppTest {
         }
         assertEquals(10, vetor.getTamanho());
     }
+
+    @Test
+    public void testBuscarElementoExistenteNoVetor() {
+        Vetor vetor = new Vetor();
+        for (int i = 0; i < 5; i++) {
+            vetor.adicionar(i);
+        }
+        int pos = vetor.buscar(3);
+        assertEquals(3, pos);
+    }
+
+    @Test
+    public void testBuscarElementoInexistenteNoVetor() {
+        Vetor vetor = new Vetor();
+        for (int i = 0; i < 5; i++) {
+            vetor.adicionar(i);
+        }
+        int pos = vetor.buscar(6);
+        assertEquals(-1, pos);
+    }
 }
