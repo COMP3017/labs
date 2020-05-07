@@ -12,7 +12,7 @@ import java.util.Random;
 
 import org.junit.Before;
 
-public class ListaTest {
+public class Tests01 {
     ListaDuplamenteEncadeada lista;
     int first, last, last_index, random, random_index;
     int sorted_pos, negative_value, negative_index;
@@ -56,39 +56,9 @@ public class ListaTest {
     }
 
     @Test
-    public void testarBuscaPrimeiroElemento() {
-        int first_value = lista.get(0);
-        assertEquals(first, first_value);
-    }
-
-    @Test
-    public void testarBuscaUltimoElemento() {
-        int last_value = lista.get(last_index);
-        assertEquals(last, last_value);
-    }
-
-    @Test
-    public void testarBuscaAleatorioElemento() {
-        int random_value = lista.get(random_index);
-        assertEquals(random, random_value);
-    }
-
-    @Test
     public void testarBuscaElementoComIndiceNegativo() {
         int value = lista.get(negative_index);
         assertEquals(value, negative_value);
-    }
-
-    @Test
-    public void testarBuscaElementoAntesDaMetade() {
-        int value = lista.get(33);
-        assertEquals(value, before_half);
-    }
-
-    @Test
-    public void testarBuscaElementoAposDaMetade() {
-        int value = lista.get(71);
-        assertEquals(value, after_half);
     }
 
 }
